@@ -34,9 +34,19 @@ html {
   --font-LexendDeca: "Lexend Deca", sans-serif;
   --weights-700:700;
   --weights-400:400;
+
+  /* font 16px-20px */
+  --step-0-1620: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
+  --step-1-1620: clamp(1.2rem, 1.0724rem + 0.5446vw, 1.5625rem);
+  --step-2-1620: clamp(1.44rem, 1.2593rem + 0.7709vw, 1.9531rem);
+
+  /* font29px-35px */
+  --step-0-2935: clamp(1.8125rem, 1.6805rem + 0.5634vw, 2.1875rem);
+  --step-1-2935: clamp(2.175rem, 1.978rem + 0.8404vw, 2.7344rem);
+  --step-2-2935: clamp(2.61rem, 2.3255rem + 1.2138vw, 3.418rem);
 }
 
- body::before {
+body::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -46,16 +56,59 @@ html {
     left: 0;  
     z-index:-1;
   }
+
 main{
   margin: var(--space-s);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-areas:
+    "sedans"
+    "suvs"
+    "luxury"
+  ;
+  /* row-gap: 30px; */
 }
-
+main section{
+  padding: var(--space-m);
+}
 section h3{
   font-family: var(--font-BigShoulders);
   font-weight: var(--weights-700);
+  text-transform: uppercase;
+  padding-block: var(--space-m);
+  font-size: var(--step-0-2935);
+}
+
+section h3, section a{
+  color: var(--clr-gray100);
 }
 
 section p, section a{
   font-family: var(--font-LexendDeca);
   font-weight: var(--weights-400);
+  font-size: var(--step-0-1620);
+
+}
+
+section a {
+  
+}
+section p{
+  color: var(--clr-transparentwhite);
+  margin-bottom: var(--space-2xs);
+}
+
+.section-sedans{
+  grid-area: sedans;
+  background-color: var(--clr-gold500);
+}
+
+.section-suvs{
+  grid-area: suvs;
+  background-color: var(--clr-cyan800);
+}
+
+.section-luxury{
+  grid-area: luxury;
+  background-color: var(--clr-green950);
 }
