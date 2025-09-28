@@ -204,7 +204,7 @@ section p {
 
 }
 
-/* this is just for Learn More too looks right */
+/* this is for Learn More to looks right */
 @media screen and (min-width: 961px) {
 
   main section {
@@ -213,10 +213,10 @@ section p {
 
 }
 
-/* this is just for paragraph too looks right */
+/* this is just for paragraph and Learn More  to looks right */
 @media screen and (min-width: 1025px) {
   main section {
-    padding: var(--space-xl);
+    padding: var(--space-l);
   }
   .section-sedans p{
     max-width: 70%;
@@ -228,5 +228,8 @@ section p {
   .section-luxury p{
     max-width: 79%;
 
+  }
+  .section-luxury button {
+    margin-top: 3.5rem;
   }
 }
