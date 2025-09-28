@@ -190,9 +190,6 @@ section p {
 
 /* this is just for text to looks right */
 @media screen and (min-width: 801px) {
-  .section-sedans p {
-  }
-
   .section-suvs p {
     max-width: 97%;
   }
@@ -229,7 +226,5 @@ section p {
     max-width: 79%;
 
   }
-  .section-luxury button {
-    margin-top: 3.5rem;
-  }
+  
 }
