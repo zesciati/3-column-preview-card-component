@@ -140,12 +140,7 @@ section p {
 section p {
     line-height: 1.8;
   }
-/* @media screen and (min-width: 480px) {
-  main section {
-    padding: var(--space-l);
-  }
 
-} */
 
 
 /* desktop size */
@@ -196,24 +191,42 @@ section p {
 /* this is just for text to looks right */
 @media screen and (min-width: 801px) {
   .section-sedans p {
-    max-width: 70%;
   }
 
   .section-suvs p {
-    max-width: 67%;
+    max-width: 97%;
   }
 
   .section-luxury p {
-    max-width: 68%;
+    max-width: 97%;
 
   }
 
 }
 
 /* this is just for Learn More too looks right */
-
 @media screen and (min-width: 961px) {
+
   main section {
     padding: var(--space-m);
+  }
+
+}
+
+/* this is just for paragraph too looks right */
+@media screen and (min-width: 1025px) {
+  main section {
+    padding: var(--space-xl);
+  }
+  .section-sedans p{
+    max-width: 70%;
+  }
+
+  .section-suvs p  {
+    max-width: 79%;
+  }
+  .section-luxury p{
+    max-width: 79%;
+
   }
 }
