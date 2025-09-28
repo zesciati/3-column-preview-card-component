@@ -114,15 +114,17 @@ section p {
   border-radius: 8px 8px 0 0;
 }
 
-.section-sedans button:active{
+.section-sedans button:active {
   background-color: #EB5B00;
   color: var(--clr-transparentwhite);
 }
-.section-suvs button:active{
+
+.section-suvs button:active {
   background-color: #468A9A;
   color: var(--clr-transparentwhite);
 }
-.section-luxury button:active{
+
+.section-luxury button:active {
   background-color: #006A67;
   color: var(--clr-transparentwhite);
 }
@@ -154,16 +156,19 @@ section p {
 }
 
 section p {
-    line-height: 1.8;
+  line-height: 1.8;
+}
+
+
+@media screen and (min-width: 480px) {
+  main section {
+    padding: var(--space-s);
   }
-
-
+}
 
 /* desktop size */
 @media screen and (min-width: 768px) {
   main {
-    /* margin-top: 4rem; */
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
     grid-template-areas:
@@ -172,13 +177,9 @@ section p {
 
   }
 
-  main section {
-    padding: var(--space-l);
-
-  }
-
   section button {
-    margin-top: var(--space-s);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-m);
   }
 
   .section-sedans {
@@ -193,54 +194,11 @@ section p {
     line-height: 1.8;
   }
 
-  .section-sedans p {
-    max-width: 100%;
-  }
-
-  .section-suvs p,
-  .section-luxury p {
-    max-width: 100%;
-  }
-
 }
 
-/* this is just for text to looks right */
-@media screen and (min-width: 801px) {
-  .section-suvs p {
-    max-width: 97%;
-  }
-
-  .section-luxury p {
-    max-width: 97%;
-
-  }
-
-}
-
-/* this is for Learn More to looks right */
-@media screen and (min-width: 961px) {
-
+@media screen and (min-width: 1205px) {
   main section {
-    padding: var(--space-m);
+    padding-inline: var(--space-2xl);
   }
 
-}
-
-/* this is just for paragraph and Learn More  to looks right */
-@media screen and (min-width: 1025px) {
-  main section {
-    padding: var(--space-xl);
-  }
-  .section-sedans p{
-    max-width: 70%;
-  }
-
-  .section-suvs p  {
-    max-width: 79%;
-  }
-  .section-luxury p{
-    max-width: 79%;
-
-  }
-  
 }
