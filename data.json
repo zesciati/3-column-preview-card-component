@@ -1,0 +1,19 @@
+[
+  { 
+    "id": 1,
+    "title": "Sedans",
+    "Description": "Picture this—you slide into a sedan, and instantly you get that balance of comfort, practicality, and style. Unlike bulky SUVs or stripped-down hatchbacks, a sedan gives you a refined driving experience. It’s low to the ground, which means smoother handling, more stability at high speeds, and that sporty feel when you’re taking turns. Inside, you’re not sacrificing space. You get a roomy cabin with enough legroom for you and your passengers, plus a separate trunk that keeps your cargo safe and your cabin quiet. Long drives? It’s quieter, more fuel-efficient, and simply more relaxing. And here’s the kicker: sedans are often cheaper to maintain and more fuel-efficient than SUVs or trucks, saving you money down the road. At the same time, they keep a professional, sleek look—perfect whether you’re pulling up to a business meeting, a family gathering, or just heading out for a weekend drive. So, if you want a vehicle that’s stylish, economical, comfortable, and reliable, a sedan gives you the best of all worlds without unnecessary bulk." 
+  },
+  {
+    "id": 2,
+    "title": "Suvs",
+    "Description": "Imagine stepping up into a vehicle that makes you feel commanding on the road. That’s an SUV—higher driving position, bigger presence, and a sense of security the moment you take the wheel. You’re not just driving; you’re in control. Space? You’ve got plenty. SUVs are built for versatility—roomy cabins that fit your family, friends, or gear without feeling cramped. Long trips, road adventures, or just running errands—you can haul it all with ease. And the seats sit higher, so passengers get a comfortable view and a smoother ride. Then there’s capability. With all-wheel drive or four-wheel drive options, SUVs can handle rough roads, bad weather, or even a weekend off-road adventure. Where a sedan might hesitate, an SUV just powers through. And don’t forget—SUVs have evolved. Many modern ones are surprisingly fuel-efficient, packed with tech like big touchscreens, smart driver-assist features, and luxury touches. You get safety, comfort, and performance all rolled into one."
+
+  },
+  {
+    "id": 3,
+    "title":"Luxury",
+    "Description":"The moment you open the door, you’re not just stepping into a vehicle—you’re stepping into an experience. Soft leather seats that hug you, ambient lighting that sets the mood, and every control laid out with precision. A luxury car isn’t just about moving from point A to B; it’s about how you feel while you get there. Performance? You get engines that are tuned for power and smoothness, with handling so refined it feels like the road bends for you. The ride is whisper-quiet, insulated from noise, so every journey feels calm, almost serene. Technology? It’s cutting-edge. Massive displays, AI-powered assistance, adaptive cruise control, self-parking—the car practically anticipates your needs before you even touch a button. Safety systems are top-notch, because luxury isn’t just comfort, it’s peace of mind. And then, of course, there’s the statement. Driving a luxury car tells the world you’ve arrived. It’s prestige, elegance, and confidence on four wheels. It’s not just transportation—it’s an extension of your personality, your success, your lifestyle. So if a sedan gives you balance, and an SUV gives you versatility, a luxury car gives you presence, performance, and pure indulgence every time you drive."
+  }
+
+]

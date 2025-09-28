@@ -63,7 +63,6 @@ body::before {
 main {
   margin: var(--space-s);
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
   grid-template-areas:
     "sedans"
     "suvs"
@@ -73,6 +72,8 @@ main {
 
 main section {
   padding: var(--space-xl);
+  /* selama dikembangkan popup windows Learn more */
+  display: none;
 }
 
 section h3 {
@@ -159,6 +160,33 @@ section p {
   line-height: 1.8;
 }
 
+article{
+  margin: var(--space-s);
+  display: flex; 
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: var(--space-s);
+  background-color: #31326F;
+  border-radius: 7px;
+  border: none;
+}
+
+article h2, article p{
+  color: #E7F2EF;
+  
+}
+
+article p{
+  font-family: var(--font-LexendDeca);
+  font-size: var(--step-0-1620);
+
+}
+article h2{
+  font-size: var(--step-0-2935);
+  font-family: var(--font-BigShoulders);
+  padding-bottom: var(--space-m);
+}
 
 @media screen and (min-width: 480px) {
   main section {
@@ -194,11 +222,18 @@ section p {
     line-height: 1.8;
   }
 
+  
+}
+
+@media screen and (min-width: 968px) {
+  article{
+    margin-inline: var(--space-3xl);
+  }
 }
 
 @media screen and (min-width: 1205px) {
   main section {
-    padding-inline: var(--space-2xl);
+    padding: var(--space-xl);
   }
 
 }
