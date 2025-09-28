@@ -101,6 +101,8 @@ section button {
   border: none;
 }
 
+
+
 section p {
   color: var(--clr-transparentwhite);
   margin-bottom: var(--space-l);
@@ -112,10 +114,24 @@ section p {
   border-radius: 8px 8px 0 0;
 }
 
+.section-sedans button:active{
+  background-color: #EB5B00;
+  color: var(--clr-transparentwhite);
+}
+.section-suvs button:active{
+  background-color: #468A9A;
+  color: var(--clr-transparentwhite);
+}
+.section-luxury button:active{
+  background-color: #006A67;
+  color: var(--clr-transparentwhite);
+}
+
 .section-suvs {
   grid-area: suvs;
   background-color: var(--clr-cyan800);
 }
+
 
 .section-luxury {
   grid-area: luxury;
@@ -213,7 +229,7 @@ section p {
 /* this is just for paragraph and Learn More  to looks right */
 @media screen and (min-width: 1025px) {
   main section {
-    padding: var(--space-l);
+    padding: var(--space-xl);
   }
   .section-sedans p{
     max-width: 70%;
