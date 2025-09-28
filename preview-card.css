@@ -3,13 +3,16 @@
 html {
   box-sizing: border-box;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
 }
 
-:root{
+:root {
   --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
   --space-2xs: clamp(0.5625rem, 0.5405rem + 0.0939vw, 0.625rem);
   --space-xs: clamp(0.875rem, 0.853rem + 0.0939vw, 0.9375rem);
@@ -28,12 +31,12 @@ html {
   --clr-transparentwhite: oklch(1 0 0 / 75%);
   /* background, headings, buttons */
   --clr-gray100: oklch(0.9619 0 0);
-  
+
   /* ---------------------------------- fonts --------------------------------- */
-  --font-BigShoulders:"Big Shoulders", sans-serif;
+  --font-BigShoulders: "Big Shoulders", sans-serif;
   --font-LexendDeca: "Lexend Deca", sans-serif;
-  --weights-700:700;
-  --weights-400:400;
+  --weights-700: 700;
+  --weights-400: 400;
 
   /* font 16px-20px */
   --step-0-1620: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
@@ -47,41 +50,43 @@ html {
 }
 
 body::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: var(--clr-gray100);
-    position:fixed;
-    top: 0;
-    left: 0;  
-    z-index:-1;
-  }
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--clr-gray100);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
-main{
+main {
   margin: var(--space-s);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
   grid-template-areas:
     "sedans"
     "suvs"
     "luxury"
   ;
 }
-main section{
+
+main section {
   padding: var(--space-xl);
 }
-section h3{
+
+section h3 {
   font-family: var(--font-BigShoulders);
   font-weight: var(--weights-700);
   text-transform: uppercase;
   padding-block: var(--space-m);
   font-size: var(--step-0-2935);
   color: var(--clr-gray100);
-
 }
 
 
-section p, section button{
+section p,
+section button {
   font-family: var(--font-LexendDeca);
   font-weight: var(--weights-400);
   font-size: var(--step-0-1620);
@@ -95,36 +100,120 @@ section button {
   padding-inline: var(--space-m);
   border: none;
 }
-section p{
+
+section p {
   color: var(--clr-transparentwhite);
   margin-bottom: var(--space-l);
 }
 
-.section-sedans{
+.section-sedans {
   grid-area: sedans;
   background-color: var(--clr-gold500);
   border-radius: 8px 8px 0 0;
 }
 
-.section-suvs{
+.section-suvs {
   grid-area: suvs;
   background-color: var(--clr-cyan800);
 }
 
-.section-luxury{
+.section-luxury {
   grid-area: luxury;
   background-color: var(--clr-green950);
   border-radius: 0 0 8px 8px;
 
 }
 
-.section-sedans button{
+.section-sedans button {
   color: var(--clr-gold500);
 
 }
- .section-luxury button{
+
+.section-luxury button {
   color: var(--clr-green950);
- } 
- .section-suvs button{
+}
+
+.section-suvs button {
   color: var(--clr-cyan800);
+}
+
+section p {
+    line-height: 1.8;
+  }
+/* @media screen and (min-width: 480px) {
+  main section {
+    padding: var(--space-l);
+  }
+
+} */
+
+
+/* desktop size */
+@media screen and (min-width: 768px) {
+  main {
+    /* margin-top: 4rem; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    grid-template-areas:
+      "sedans suvs luxury"
+    ;
+
+  }
+
+  main section {
+    padding: var(--space-l);
+
+  }
+
+  section button {
+    margin-top: var(--space-s);
+  }
+
+  .section-sedans {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .section-luxury {
+    border-radius: 0 8px 8px 0;
+  }
+
+  section p {
+    line-height: 1.8;
+  }
+
+  .section-sedans p {
+    max-width: 100%;
+  }
+
+  .section-suvs p,
+  .section-luxury p {
+    max-width: 100%;
+  }
+
+}
+
+/* this is just for text to looks right */
+@media screen and (min-width: 801px) {
+  .section-sedans p {
+    max-width: 70%;
+  }
+
+  .section-suvs p {
+    max-width: 67%;
+  }
+
+  .section-luxury p {
+    max-width: 68%;
+
+  }
+
+}
+
+/* this is just for Learn More too looks right */
+
+@media screen and (min-width: 961px) {
+  main section {
+    padding: var(--space-m);
+  }
 }
