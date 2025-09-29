@@ -170,6 +170,7 @@ article{
   background-color: #31326F;
   border-radius: 7px;
   border: none;
+  position: relative;
 }
 
 article h2, article p{
@@ -182,15 +183,29 @@ article p{
   font-size: var(--step-0-1620);
 
 }
-article h2{
+h2{
   font-size: var(--step-0-2935);
   font-family: var(--font-BigShoulders);
   padding-bottom: var(--space-m);
 }
 
+article svg{
+  width: 10%;
+  /* height: 20%; */
+  position: absolute;
+  top: 10px;
+  /* left: 520px; */
+  right: 30px;
+  bottom: 0;
+}
+
 @media screen and (min-width: 480px) {
   main section {
     padding: var(--space-s);
+  }
+
+  article svg{
+    width: 5%;
   }
 }
 
@@ -234,6 +249,10 @@ article h2{
 @media screen and (min-width: 1205px) {
   main section {
     padding: var(--space-xl);
+  }
+
+  article svg{
+    width: 4%;
   }
 
 }
