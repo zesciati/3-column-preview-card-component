@@ -7,3 +7,7 @@ frontend:
   ☐ JS untuk pop up windows info untuk Learn More 
     ✔ Membuat tampilan Informasi Learn More @done(25-09-28 23:05)
     ✔ Membuat format fetching API json @done(25-09-28 23:05)
+    ✔ Menambahkan kemampuan untuk menghapus konten informasi learn more @done(25-10-02 00:06)
+    ☐ klik learn more akan muncul informasi learn more
+
+

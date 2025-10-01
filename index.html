@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="preview-card.css">
   <title>Zak | 3-column preview card component</title>
+  <script defer src="preview-card.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -16,11 +17,11 @@
 
 <body>
   <main>
-    <article>
+    <article id="information" class="hidden">
       <span></span>
       <h2 class="title-article">cccc</h2>
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM231 231C240.4 221.6 255.6 221.6 264.9 231L319.9 286L374.9 231C384.3 221.6 399.5 221.6 408.8 231C418.1 240.4 418.2 255.6 408.8 264.9L353.8 319.9L408.8 374.9C418.2 384.3 418.2 399.5 408.8 408.8C399.4 418.1 384.2 418.2 374.9 408.8L319.9 353.8L264.9 408.8C255.5 418.2 240.3 418.2 231 408.8C221.7 399.4 221.6 384.2 231 374.9L286 319.9L231 264.9C221.6 255.5 221.6 240.3 231 231z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" id="x-icon"><path d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM231 231C240.4 221.6 255.6 221.6 264.9 231L319.9 286L374.9 231C384.3 221.6 399.5 221.6 408.8 231C418.1 240.4 418.2 255.6 408.8 264.9L353.8 319.9L408.8 374.9C418.2 384.3 418.2 399.5 408.8 408.8C399.4 418.1 384.2 418.2 374.9 408.8L319.9 353.8L264.9 408.8C255.5 418.2 240.3 418.2 231 408.8C221.7 399.4 221.6 384.2 231 374.9L286 319.9L231 264.9C221.6 255.5 221.6 240.3 231 231z"/></svg>
 
       <p class="para-article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate eaque, perferendis culpa aut laboriosam quasi debitis quo aspernatur nesciunt eum reprehenderit, minima, excepturi alias nihil sed enim perspiciatis! Est.</p>
     </article>
@@ -60,39 +61,54 @@
   </main>
 
   <script>
-    const pArticle = document.querySelector('.para-article');
-    const titleArticle = document.querySelector('.title-article');
+//     const pArticle = document.querySelector('.para-article');
+//     const titleArticle = document.querySelector('.title-article');
+//     const infoArticle = document.getElementById("information");
+//     const cancelLearnMore = document.getElementById('x-icon');
 
+//     cancelLearnMore.addEventListener("click", offFunction);
+    
+    
+// // Erasing Learn More box
+// function offFunction(){
+//   infoArticle.classList.add("hidden");
+// }
 
-    let posts = []; // global variable to hold data
+//     let posts = []; // global variable to hold data
 
-    fetch('./data.json')
-    // change from json format -> js array format 
-      .then(res => res.json())
-    // data adalah parsed data  dari json file
-      .then(data => {
-    // mengubahnya dalam bentuk array
-        posts = data; 
-        // pArticle.textContent = data[0].title; -> Bisa juga tapi togglePass membutuhkan global scope untuk berhasil
-      });
+//     fetch('./data.json')
+//     // change from json format -> js array format 
+//       .then(res => res.json())
+//     // data adalah parsed data  dari json file
+//       .then(data => {
+//     // mengubahnya dalam bentuk array
+//         posts = data; 
+//         // pArticle.textContent = data[0].title; -> Bisa juga tapi togglePass membutuhkan global scope untuk berhasil
+//       });
 
-      function togglePass(id){
-        // clear old content first
-        titleArticle.textContent = "";
-        pArticle.textContent = "";
+//       function togglePass(id){
+//         // clear old content first
+//         titleArticle.textContent = "";
+//         pArticle.textContent = "";
 
-        if(id === "sedan"){
-          titleArticle.textContent = posts[0].title;
-          pArticle.textContent = posts[0].Description;
-        }else if(id === "suv"){
-          titleArticle.textContent = posts[1].title;
-          pArticle.textContent = posts[1].Description;
-        }else if(id === "luxury"){
-          titleArticle.textContent = posts[2].title;
-          pArticle.textContent = posts[2].Description;
+//         if(id === "sedan"){
+//           titleArticle.textContent = posts[0].title;
+//           pArticle.textContent = posts[0].Description;
+//           infoArticle.classList.remove("hidden");
+          
+          
+//         }else if(id === "suv"){
+//           titleArticle.textContent = posts[1].title;
+//           pArticle.textContent = posts[1].Description;
+//           infoArticle.style.display = "block";
 
-        }
-      }
+//         }else if(id === "luxury"){
+//           titleArticle.textContent = posts[2].title;
+//           pArticle.textContent = posts[2].Description;
+//           infoArticle.style.display = "block";
+
+//         }
+//       }
   </script>
 </body>
 
