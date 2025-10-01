@@ -4,10 +4,10 @@ frontend:
   ✔ push project ke github @done(25-09-24 17:20)
   ✔ Desktop desain @done(25-09-28 14:27)
     ✔ 3 tabel grid @done(25-09-28 14:27)
-  ☐ JS untuk pop up windows info untuk Learn More 
+  ✔ JS untuk pop up windows info untuk Learn More @done(25-10-02 00:47)
     ✔ Membuat tampilan Informasi Learn More @done(25-09-28 23:05)
     ✔ Membuat format fetching API json @done(25-09-28 23:05)
     ✔ Menambahkan kemampuan untuk menghapus konten informasi learn more @done(25-10-02 00:06)
-    ☐ klik learn more akan muncul informasi learn more
+    ✔ klik learn more akan muncul informasi learn more @done(25-10-02 00:47)
 
 
